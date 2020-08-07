@@ -13,4 +13,8 @@ object FirstFunction extends App {
   println("Increase 10 =" + increaseAndPrint(10))
   val numbers = List(-11, -10, -5, 0, 5, 10)
   println("Filter =" + numbers.filter(x => x > 0))
+
+  def containsOdd(nums: List[Int]) = nums.exists(_ % 2 == 1)
+
+  def twice(op: Double => Double, x: Double) = op(op(x))
 }
